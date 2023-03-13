@@ -1,7 +1,7 @@
 import { Category, Hobby } from '../classes/Category';
 export const Categories = [
     new Category('1','Deportes','#0085C7'),
-    new Category('2','Video Juagos','#FF8000'),
+    new Category('2','Video Jugos','#FF8000'),
     new Category('3','Comidas','#FFB6C1'),
     new Category('4','Idiomas','#00C706'),
     new Category('5','Juego de mesa','#800080')
