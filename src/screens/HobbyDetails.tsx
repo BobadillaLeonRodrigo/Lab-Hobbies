@@ -1,25 +1,16 @@
 import { View, StyleSheet, FlatList } from 'react-native'
 import React, { useLayoutEffect } from 'react'
-import { Categories } from '../model/data/dummyData';
+import { Hobbies,Categories } from '../model/data/dummyData';
 import HobbyItem from './HobbyItem';
 
 const HobbyDetails = ( { route, navigation }: any) => {
-
   const categoryId = route.params.categoryId;
-
-    /* const hobbiesByCategory = Hobbies.filter((hobby) => {
-      return hobby.categoryIds.indexOf(categoryId) >= 0;
-    }); */
-
     const hobbiesByCategory = Hobbies.filter((hobby) => {
       return hobby.categoryIds.indexOf(categoryId) >= 0;
     });
-
   useLayoutEffect(()=> {
-
     const categoryTitle = Categories.find(
       (currentCategory) => currentCategory.id === categoryId)?.title;
-
         if ( categoryTitle != undefined ) {
           navigation.setOptions({
             title: categoryTitle,

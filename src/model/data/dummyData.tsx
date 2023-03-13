@@ -14,6 +14,6 @@ export const Hobbies = [
     ['Concentracion']),
     new Hobby('2',['1','2'],
     'Correr',
-    'https:/fotografias.correryfitness.com/clipping/cmsimages01/2019/09/23/AE357C4B-E3AC-4DAE-B918-7C346BF5CA40/58.jpg',
+    'https://fotografias.correryfitness.com/clipping/cmsimages01/2019/09/23/AE357C4B-E3AC-4DAE-B918-7C346BF5CA40/58.jpg',
     ['Concentracion','Condicion'])
 ];
