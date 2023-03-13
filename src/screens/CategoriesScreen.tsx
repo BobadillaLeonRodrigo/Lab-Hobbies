@@ -14,11 +14,13 @@ const CategoriesScreen = ({ navigation: { navigate } }: any) => {
       haldlerPress = {() => haldlerPress(category.item.id)} />)
   }
   return (
-    <FlatList data = { Categories }
-      keyExtractor = { (category) => category.id }
+    <View style = {{ backgroundColor: 'pink', height: '100%' }}>
+      <FlatList data = { Categories }
+        keyExtractor = { (category) => category.id }
         renderItem = { renderCategoryItem }
-          numColumns = {2}
-    />
+        numColumns = {2}
+        />
+    </View>
   );
 }
 
